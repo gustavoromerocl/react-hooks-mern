@@ -39,3 +39,5 @@ Adicionalmente estaremos dejando las bases para lo que será una sección de pru
 ### Exponer métodos del hook
 
 ### UseEffect
+
+### Dependencias del useEffect
