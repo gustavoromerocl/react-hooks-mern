@@ -33,3 +33,9 @@ Estos son los Hooks relativamente simples, aún hay mas que explicaremos más ad
 Adicionalmente estaremos dejando las bases para lo que será una sección de pruebas sumamente interesante después.
 
 ### UseState
+
+### UseCounter (Custom hook)
+
+### Exponer métodos del hook
+
+### UseEffect
