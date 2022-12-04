@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
+import { Message } from './Message';
 
 export const SimpleForm = () => {
   const [formState, setformState] = useState({
@@ -9,9 +10,9 @@ export const SimpleForm = () => {
 
   const { username, email } = formState;
 
-  const onInputChange = ({target}) => {
+  const onInputChange = ({ target }) => {
     const { name, value } = target;
-    console.log({name, value});
+    console.log({ name, value });
     setformState({
       ...formState,
       //Utliza la propiedad del objeto llmandola por su key, por eso esta entre corchetes(De esta forma el método es aplicable para ambos input)
@@ -20,15 +21,15 @@ export const SimpleForm = () => {
   }
 
   useEffect(() => {
-    console.log('useEffect called')
+    // console.log('useEffect called')
   }, []);
 
   useEffect(() => {
-    console.log('formState change')
+    // console.log('formState change')
   }, [formState]);
 
   useEffect(() => {
-    console.log('email change')
+    // console.log('email change')
   }, [email]);
 
   return (
@@ -53,6 +54,9 @@ export const SimpleForm = () => {
         value={email}
         onChange={onInputChange}
       />
+
+      { (username === 'strider') &&  <Message />}
+      
     </>
   )
 }
